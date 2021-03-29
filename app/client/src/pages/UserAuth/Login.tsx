@@ -95,7 +95,7 @@ export const Login = (props: LoginFormProps) => {
     showError = true;
   }
 
-  let loginURL = "/api/v1/" + LOGIN_SUBMIT_PATH;
+  let loginURL = "http://localhost:8080/api/v1/" + LOGIN_SUBMIT_PATH;
   let signupURL = SIGN_UP_URL;
   if (queryParams.has("redirectUrl")) {
     loginURL += `?redirectUrl=${queryParams.get("redirectUrl")}`;

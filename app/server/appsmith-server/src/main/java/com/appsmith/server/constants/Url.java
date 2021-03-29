@@ -1,7 +1,7 @@
 package com.appsmith.server.constants;
 
 public interface Url {
-    String BASE_URL = "/api";
+    String BASE_URL = "http://localhost:8080/api";
     String VERSION = "/v1";
     String LOGIN_URL = BASE_URL + VERSION + "/login";
     String LOGOUT_URL = BASE_URL + VERSION + "/logout";

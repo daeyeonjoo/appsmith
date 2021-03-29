@@ -56,7 +56,7 @@
     cache-control = "max-age=604800"
 
 [[redirects]]
-  from = "/api/*"
+  from = "http://localhost:8080/api/*"
   to = "API_PLACEHOLDER/api/:splat"
   status = 200
   force = true

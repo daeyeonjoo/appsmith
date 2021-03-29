@@ -90,7 +90,7 @@ export const SignUp = (props: SignUpFormProps) => {
     showError = true;
   }
 
-  let signupURL = "/api/v1/" + SIGNUP_SUBMIT_PATH;
+  let signupURL = "http://localhost:8080/api/v1/" + SIGNUP_SUBMIT_PATH;
   if (queryParams.has("appId")) {
     signupURL += `?appId=${queryParams.get("appId")}`;
   } else if (queryParams.has("redirectUrl")) {
