@@ -195,6 +195,7 @@ const PaneDrawer = (props: PaneDrawerProps) => {
     // Un-focus all widgets
     // Hide property pane
     // Close all modals
+    //
     if (props.isVisible) {
       showPropertyPane();
       selectWidget(undefined);
