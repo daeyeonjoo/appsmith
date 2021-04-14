@@ -12,6 +12,10 @@ import InputWidget, {
   InputWidgetProps,
   ProfiledInputWidget,
 } from "widgets/InputWidget";
+import DxInputWidget, {
+  DxInputWidgetProps,
+  ProfiledDxInputWidget,
+} from "widgets/DxInputWidget";
 import CheckboxWidget, {
   CheckboxWidgetProps,
   ProfiledCheckboxWidget,
@@ -94,6 +98,7 @@ import SwitchWidget, {
   ProfiledSwitchWidget,
   SwitchWidgetProps,
 } from "widgets/SwitchWidget";
+
 export default class WidgetBuilderRegistry {
   static registerWidgetBuilders() {
     WidgetFactory.registerWidgetBuilder(
@@ -444,6 +449,20 @@ export default class WidgetBuilderRegistry {
       ModalWidget.getDefaultPropertiesMap(),
       ModalWidget.getMetaPropertiesMap(),
       ModalWidget.getPropertyPaneConfig(),
+    );
+
+    WidgetFactory.registerWidgetBuilder(
+      "DX_INPUT_WIDGET",
+      {
+        buildWidget(widgetProps: DxInputWidgetProps): JSX.Element {
+          return <ProfiledDxInputWidget {...widgetProps} />;
+        },
+      },
+      DxInputWidget.getPropertyValidationMap(),
+      DxInputWidget.getDerivedPropertiesMap(),
+      DxInputWidget.getDefaultPropertiesMap(),
+      DxInputWidget.getMetaPropertiesMap(),
+      DxInputWidget.getPropertyPaneConfig(),
     );
   }
 }

@@ -99,6 +99,11 @@ const WidgetSidebarResponse: WidgetCardProps[] = [
     widgetCardName: "Modal",
     key: generateReactKey(),
   },
+  {
+    type: "DX_INPUT_WIDGET",
+    widgetCardName: "DX Input",
+    key: generateReactKey(),
+  },
 ];
 
 export default WidgetSidebarResponse;

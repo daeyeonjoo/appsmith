@@ -123,6 +123,8 @@ export const getWidgetCards = createSelector(
     widgetConfigs: WidgetConfigReducerState,
   ) => {
     const cards = widgetCards.cards;
+    console.log("1111111111111");
+    console.log(cards);
     return cards
       .map((widget: WidgetCardProps) => {
         const {

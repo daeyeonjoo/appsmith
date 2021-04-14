@@ -497,6 +497,15 @@ const WidgetConfigResponse: WidgetConfigReducerState = {
       widgetName: "Skeleton",
       version: 1,
     },
+    DX_INPUT_WIDGET: {
+      inputType: "TEXT",
+      rows: 1,
+      label: "",
+      columns: 5,
+      widgetName: "Input",
+      version: 1,
+      resetOnSubmit: true,
+    },
   },
   configVersion: 1,
 };

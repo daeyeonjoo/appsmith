@@ -136,6 +136,11 @@ export const WidgetIcons: {
       <ButtonIcon />
     </IconWrapper>
   ),
+  DX_INPUT_WIDGET: (props: IconProps) => (
+    <IconWrapper {...props}>
+      <InputIcon />
+    </IconWrapper>
+  ),
 };
 
 export type WidgetIcon = typeof WidgetIcons[keyof typeof WidgetIcons];

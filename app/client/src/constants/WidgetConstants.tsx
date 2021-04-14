@@ -25,6 +25,7 @@ export enum WidgetTypes {
   VIDEO_WIDGET = "VIDEO_WIDGET",
   SKELETON_WIDGET = "SKELETON_WIDGET",
   SWITCH_WIDGET = "SWITCH_WIDGET",
+  DX_INPUT_WIDGET = "DX_INPUT_WIDGET",
 }
 
 export type WidgetType = keyof typeof WidgetTypes;

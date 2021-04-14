@@ -107,6 +107,10 @@ export const HelpMap = {
     path: "/widget-reference/switch",
     searchKey: "Switch",
   },
+  DX_INPUT_WIDGET: {
+    path: "widget-reference/dx-input",
+    searchKey: "DX Input",
+  },
 };
 
 export const HelpBaseURL = "https://docs.appsmith.com";

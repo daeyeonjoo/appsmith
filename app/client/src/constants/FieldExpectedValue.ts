@@ -166,6 +166,17 @@ const FIELD_VALUES: Record<
     shouldScroll: "boolean",
     isVisible: "boolean",
   },
+  DX_INPUT_WIDGET: {
+    inputType: "string",
+    placeholderText: "string",
+    defaultText: "string",
+    regex: "string",
+    errorMessage: "string",
+    isRequired: "boolean",
+    isVisible: "boolean",
+    isDisabled: "boolean",
+    // onTextChanged: "Function Call",
+  },
 };
 
 export default FIELD_VALUES;
