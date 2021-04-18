@@ -116,6 +116,16 @@ export const entityDefinitions = {
     isVisible: isVisible,
     text: "string",
   },
+  DX_BUTTON_WIDGET: {
+    "!doc":
+      "Buttons are used to capture user intent and trigger actions based on that intent",
+    "!url": "https://docs.appsmith.com/widget-reference/button",
+    isVisible: isVisible,
+    text: "string",
+    isDisabled: "bool",
+    recaptchaToken: "string",
+    googleRecaptchaKey: "string",
+  },
   BUTTON_WIDGET: {
     "!doc":
       "Buttons are used to capture user intent and trigger actions based on that intent",

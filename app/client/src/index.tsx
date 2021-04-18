@@ -16,6 +16,8 @@ import { AppState } from "reducers";
 import { setThemeMode } from "actions/themeActions";
 import { StyledToastContainer } from "components/ads/Toast";
 import localStorage from "utils/localStorage";
+import "devextreme/dist/css/dx.common.css";
+import "devextreme/dist/css/dx.light.css";
 
 // enable autofreeze only in development
 import { setAutoFreeze } from "immer";

@@ -1767,18 +1767,9 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@craco/craco@^5.0.0":
+"@craco/craco@^5.0.0", "@craco/craco@^5.7.0":
   version "5.7.0"
   resolved "https://registry.yarnpkg.com/@craco/craco/-/craco-5.7.0.tgz#ad6a240e0f85ac948f2935581da12d4223d66366"
-  dependencies:
-    cross-spawn "^7.0.0"
-    lodash "^4.17.15"
-    webpack-merge "^4.2.2"
-
-"@craco/craco@^5.9.0":
-  version "5.9.0"
-  resolved "https://registry.yarnpkg.com/@craco/craco/-/craco-5.9.0.tgz#dcd34330b558596a4841374743071b7fa041dce9"
-  integrity sha512-2Q8gIB4W0/nPiUxr9iAKUhGsFlXYN0/wngUdK1VWtfV2NtBv+yllNn2AjieaLbttgpQinuOYmDU65vocC0NMDg==
   dependencies:
     cross-spawn "^7.0.0"
     lodash "^4.17.15"
@@ -7022,7 +7013,7 @@ devextreme-quill@~0.10.2:
     parchment "2.0.0-dev.2"
     quill-delta "4.2.2"
 
-devextreme-react@20.2.6:
+devextreme-react@20.2:
   version "20.2.6"
   resolved "https://registry.yarnpkg.com/devextreme-react/-/devextreme-react-20.2.6.tgz#0ebc0d6945bfa9704d957a0c20c039a215dec871"
   integrity sha512-QDkFpPkAM6KrT+QwDBxp+zf+gxstz0nQWG+odW6O5h8mzZFOBDsVkCOttc5S31rQkjajEjvlY+0ebC8wKCHkIA==
@@ -7031,7 +7022,7 @@ devextreme-react@20.2.6:
     dot "^1.1.2"
     prop-types "^15.6.1"
 
-devextreme@20.2.6:
+devextreme@20.2:
   version "20.2.6"
   resolved "https://registry.yarnpkg.com/devextreme/-/devextreme-20.2.6.tgz#1f2f6a5239a2397e7a3c401ba02cfd4f8c5818fd"
   integrity sha512-Prs+Mx+cuGqgEl4qlJHiw2i/v7cnybjn1yNXiP2OPDIccoqwiSdI4UInfHwrM6w3N42+weDxS8nEDmBav31Smg==
@@ -8063,7 +8054,6 @@ fast-deep-equal@^3.1.1:
 fast-diff@1.2.0, fast-diff@^1.1.2:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/fast-diff/-/fast-diff-1.2.0.tgz#73ee11982d86caaf7959828d519cfe927fac5f03"
-  integrity sha512-xJuoT5+L99XlZ8twedaRf6Ax2TgQVxvgZOYoPKqZufmJib0tL2tegPBOZb1pVNgIhlqDlA0eO0c3wBvQcmzx4w==
 
 fast-glob@^2.0.2:
   version "2.2.7"
@@ -12315,7 +12305,6 @@ paging-algorithm@^1.0.1:
 pako@~1.0.2, pako@~1.0.5:
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/pako/-/pako-1.0.11.tgz#6c9599d340d54dfd3946380252a35705a6b992bf"
-  integrity sha512-4hLB8Py4zZce5s4yd9XzopqwVv/yGNhV1Bl8NTmCq1763HeK2+EwVTv+leGeL13Dnh2wfbqowVPXCIO0z4taYw==
 
 parallel-transform@^1.1.0:
   version "1.2.0"
@@ -15324,7 +15313,6 @@ shellwords@^0.1.1:
 showdown@^1.8.6, showdown@^1.9.1:
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/showdown/-/showdown-1.9.1.tgz#134e148e75cd4623e09c21b0511977d79b5ad0ef"
-  integrity sha512-9cGuS382HcvExtf5AHk7Cb4pAeQQ+h0eTr33V1mu+crYWV4KvWAw6el92bDrqGEk5d46Ai/fhbEUwqJ/mTCNEA==
   dependencies:
     yargs "^14.2"
 

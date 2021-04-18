@@ -31,6 +31,11 @@ export const WidgetIcons: {
       <SpinnerIcon />
     </IconWrapper>
   ),
+  DX_BUTTON_WIDGET: (props: IconProps) => (
+    <IconWrapper {...props}>
+      <ButtonIcon />
+    </IconWrapper>
+  ),
   BUTTON_WIDGET: (props: IconProps) => (
     <IconWrapper {...props}>
       <ButtonIcon />

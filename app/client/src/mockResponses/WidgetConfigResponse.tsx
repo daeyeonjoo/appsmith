@@ -6,6 +6,18 @@ import { FileDataTypes } from "widgets/FilepickerWidget";
 
 const WidgetConfigResponse: WidgetConfigReducerState = {
   config: {
+    DX_BUTTON_WIDGET: {
+      text: "Submit",
+      buttonStyle: "default",
+      stylingMode: "contained",
+      rows: 1,
+      columns: 2,
+      widgetName: "DXButton",
+      isDisabled: false,
+      isVisible: true,
+      isDefaultClickDisabled: true,
+      version: 1,
+    },
     BUTTON_WIDGET: {
       text: "Submit",
       buttonStyle: "PRIMARY_BUTTON",

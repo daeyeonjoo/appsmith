@@ -30,6 +30,7 @@ import { VideoWidgetProps } from "widgets/VideoWidget";
 import { SkeletonWidgetProps } from "../../widgets/SkeletonWidget";
 import { SwitchWidgetProps } from "widgets/SwitchWidget";
 import { DxInputWidgetProps } from "../../widgets/DxInputWidget";
+import { DXButtonWidgetProps } from "../../widgets/DXButtonWidget";
 
 const initialState: WidgetConfigReducerState = WidgetConfigResponse;
 
@@ -52,6 +53,7 @@ export interface WidgetConfigProps {
 
 export interface WidgetConfigReducerState {
   config: {
+    DX_BUTTON_WIDGET: Partial<DXButtonWidgetProps> & WidgetConfigProps;
     BUTTON_WIDGET: Partial<ButtonWidgetProps> & WidgetConfigProps;
     TEXT_WIDGET: Partial<TextWidgetProps> & WidgetConfigProps;
     IMAGE_WIDGET: Partial<ImageWidgetProps> & WidgetConfigProps;
