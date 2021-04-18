@@ -10,6 +10,11 @@ const WidgetSidebarResponse: WidgetCardProps[] = [
     key: generateReactKey(),
   },
   {
+    type: "DX_BUTTON_WIDGET",
+    widgetCardName: "DXButton",
+    key: generateReactKey(),
+  },
+  {
     type: "CHART_WIDGET",
     widgetCardName: "Chart",
     key: generateReactKey(),

@@ -94,6 +94,10 @@ import SwitchWidget, {
   ProfiledSwitchWidget,
   SwitchWidgetProps,
 } from "widgets/SwitchWidget";
+import DXButtonWidget, {
+  DXButtonWidgetProps,
+  ProfiledDXButtonWidget,
+} from "widgets/DXButtonWidget";
 export default class WidgetBuilderRegistry {
   static registerWidgetBuilders() {
     WidgetFactory.registerWidgetBuilder(
@@ -444,6 +448,22 @@ export default class WidgetBuilderRegistry {
       ModalWidget.getDefaultPropertiesMap(),
       ModalWidget.getMetaPropertiesMap(),
       ModalWidget.getPropertyPaneConfig(),
+    );
+
+    // DevExtreme
+
+    WidgetFactory.registerWidgetBuilder(
+      "DX_BUTTON_WIDGET",
+      {
+        buildWidget(widgetData: DXButtonWidgetProps): JSX.Element {
+          return <ProfiledDXButtonWidget {...widgetData} />;
+        },
+      },
+      DXButtonWidget.getPropertyValidationMap(),
+      DXButtonWidget.getDerivedPropertiesMap(),
+      DXButtonWidget.getDefaultPropertiesMap(),
+      DXButtonWidget.getMetaPropertiesMap(),
+      DXButtonWidget.getPropertyPaneConfig(),
     );
   }
 }

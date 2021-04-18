@@ -116,6 +116,12 @@ const FIELD_VALUES: Record<
     // onMarkerClick: "Function Call",
     // onCreateMarker: "Function Call",
   },
+  DX_BUTTON_WIDGET: {
+    text: "string",
+    buttonStyle: "PRIMARY_BUTTON | SECONDARY_BUTTON | DANGER_BUTTON",
+    isVisible: "boolean",
+    // onClick: "Function Call",
+  },
   BUTTON_WIDGET: {
     text: "string",
     buttonStyle: "PRIMARY_BUTTON | SECONDARY_BUTTON | DANGER_BUTTON",

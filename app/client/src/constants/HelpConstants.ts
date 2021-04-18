@@ -11,6 +11,10 @@ export const HelpMap = {
     path: "/widget-reference/button",
     searchKey: "Button",
   },
+  DX_BUTTON_WIDGET: {
+    path: "/widget-reference/dxbutton",
+    searchKey: "DXButton",
+  },
   TEXT_WIDGET: {
     path: "/widget-reference/text",
     searchKey: "Text",

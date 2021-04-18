@@ -53,6 +53,8 @@
     "craco-alias": "^2.1.1",
     "cypress-log-to-output": "^1.1.2",
     "deep-diff": "^1.0.2",
+    "devextreme": "20.2",
+    "devextreme-react": "20.2",
     "downloadjs": "^1.4.7",
     "eslint": "^7.11.0",
     "fast-deep-equal": "^3.1.1",
