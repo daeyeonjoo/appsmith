@@ -164,6 +164,7 @@ class DxInputComponent extends React.Component<
     }
   };
   onKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    console.log("commit test");
     if (typeof this.props.onKeyDown === "function") {
       this.props.onKeyDown(e);
     }
