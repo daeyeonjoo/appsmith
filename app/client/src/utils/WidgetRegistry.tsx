@@ -102,6 +102,15 @@ import DXButtonWidget, {
   DXButtonWidgetProps,
   ProfiledDXButtonWidget,
 } from "widgets/DXButtonWidget";
+import DxDoughnutChartWidget, {
+  DxDoughnutChartWidgetProps,
+  ProfiledDxDoughnutChartWidget,
+} from "../widgets/DxDoughnutChartWidget";
+import DxFunnelChartWidget, {
+  DxFunnelChartWidgetProps,
+  ProfiledDxFunnelChartWidget,
+} from "../widgets/DxFunnelChartWidget";
+
 export default class WidgetBuilderRegistry {
   static registerWidgetBuilders() {
     WidgetFactory.registerWidgetBuilder(
@@ -482,6 +491,34 @@ export default class WidgetBuilderRegistry {
       DxInputWidget.getDefaultPropertiesMap(),
       DxInputWidget.getMetaPropertiesMap(),
       DxInputWidget.getPropertyPaneConfig(),
+    );
+
+    WidgetFactory.registerWidgetBuilder(
+      "DX_DOUGHNUT_CHART_WIDGET",
+      {
+        buildWidget(widgetProps: DxDoughnutChartWidgetProps): JSX.Element {
+          return <ProfiledDxDoughnutChartWidget {...widgetProps} />;
+        },
+      },
+      DxDoughnutChartWidget.getPropertyValidationMap(),
+      DxDoughnutChartWidget.getDerivedPropertiesMap(),
+      DxDoughnutChartWidget.getDefaultPropertiesMap(),
+      DxDoughnutChartWidget.getMetaPropertiesMap(),
+      DxDoughnutChartWidget.getPropertyPaneConfig(),
+    );
+
+    WidgetFactory.registerWidgetBuilder(
+      "DX_FUNNEL_CHART_WIDGET",
+      {
+        buildWidget(widgetProps: DxFunnelChartWidgetProps): JSX.Element {
+          return <ProfiledDxFunnelChartWidget {...widgetProps} />;
+        },
+      },
+      DxFunnelChartWidget.getPropertyValidationMap(),
+      DxFunnelChartWidget.getDerivedPropertiesMap(),
+      DxFunnelChartWidget.getDefaultPropertiesMap(),
+      DxFunnelChartWidget.getMetaPropertiesMap(),
+      DxFunnelChartWidget.getPropertyPaneConfig(),
     );
   }
 }

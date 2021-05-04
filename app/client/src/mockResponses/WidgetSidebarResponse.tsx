@@ -109,6 +109,16 @@ const WidgetSidebarResponse: WidgetCardProps[] = [
     widgetCardName: "DX Input",
     key: generateReactKey(),
   },
+  {
+    type: "DX_DOUGHNUT_CHART_WIDGET",
+    widgetCardName: "DX Doughnut Chart",
+    key: generateReactKey(),
+  },
+  {
+    type: "DX_FUNNEL_CHART_WIDGET",
+    widgetCardName: "DX Funnel Chart",
+    key: generateReactKey(),
+  },
 ];
 
 export default WidgetSidebarResponse;

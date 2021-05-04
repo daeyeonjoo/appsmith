@@ -115,6 +115,14 @@ export const HelpMap = {
     path: "widget-reference/dx-input",
     searchKey: "DX Input",
   },
+  DX_DOUGHNUT_CHART_WIDGET: {
+    path: "widget-reference/dx-doughnut-chart",
+    searchKey: "DX Doughnut Chart",
+  },
+  DX_FUNNEL_CHART_WIDGET: {
+    path: "widget-reference/dx-funnel-chart",
+    searchKey: "DX Funnel Chart",
+  },
 };
 
 export const HelpBaseURL = "https://docs.appsmith.com";

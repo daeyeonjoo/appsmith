@@ -170,6 +170,11 @@ class DxInputComponent extends React.Component<
     }
   };
 
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
+  valueChanged = (data: any) => {
+    this.props.onValueChange(data.value);
+  };
+
   private numericInputComponent = () => (
     <NumericInput
       value={this.props.value}
@@ -212,7 +217,12 @@ class DxInputComponent extends React.Component<
     isTextArea ? (
       this.textAreaInputComponent()
     ) : (
-      <TextBox defaultValue="Dx Input Box" />
+      <TextBox
+        value={this.props.value}
+        placeholder="Input text"
+        onValueChanged={this.valueChanged}
+        showClearButton={true}
+      />
       // <InputGroup
       //   value={this.props.value}
       //   placeholder={this.props.placeholder}
@@ -312,6 +322,7 @@ export interface DxInputComponentProps extends ComponentProps {
       | React.KeyboardEvent<HTMLTextAreaElement>
       | React.KeyboardEvent<HTMLInputElement>,
   ) => void;
+  valueChanged?: (data: any) => void;
 }
 
 export default DxInputComponent;

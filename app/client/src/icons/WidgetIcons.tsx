@@ -146,6 +146,16 @@ export const WidgetIcons: {
       <InputIcon />
     </IconWrapper>
   ),
+  DX_DOUGHNUT_CHART_WIDGET: (props: IconProps) => (
+    <IconWrapper {...props}>
+      <ChartIcon />
+    </IconWrapper>
+  ),
+  DX_FUNNEL_CHART_WIDGET: (props: IconProps) => (
+    <IconWrapper {...props}>
+      <ChartIcon />
+    </IconWrapper>
+  ),
 };
 
 export type WidgetIcon = typeof WidgetIcons[keyof typeof WidgetIcons];

@@ -183,6 +183,25 @@ const FIELD_VALUES: Record<
     isDisabled: "boolean",
     // onTextChanged: "Function Call",
   },
+  DX_DOUGHNUT_CHART_WIDGET: {
+    inputType: "string",
+    placeholderText: "string",
+    defaultText: "string",
+    regex: "string",
+    errorMessage: "string",
+    isRequired: "boolean",
+    isVisible: "boolean",
+    isDisabled: "boolean",
+  },
+  DX_FUNNEL_CHART_WIDGET: {
+    placeholderText: "string",
+    defaultText: "string",
+    regex: "string",
+    errorMessage: "string",
+    isRequired: "boolean",
+    isVisible: "boolean",
+    isDisabled: "boolean",
+  },
 };
 
 export default FIELD_VALUES;

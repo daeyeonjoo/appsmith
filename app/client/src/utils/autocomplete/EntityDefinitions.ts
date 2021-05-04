@@ -247,6 +247,32 @@ export const entityDefinitions = {
     isVisible: isVisible,
     isDisabled: "bool",
   },
+  DX_DOUGHNUT_CHART_WIDGET: {
+    "!doc":
+      "An input text field is used to capture a users textual input such as their names, numbers, emails etc. Inputs are used in forms and can have custom validations.",
+    "!url": "https://docs.appsmith.com/widget-reference/input",
+    text: {
+      "!type": "string",
+      "!doc": "The text value of the input",
+      "!url": "https://docs.appsmith.com/widget-reference/input",
+    },
+    isValid: "bool",
+    isVisible: isVisible,
+    isDisabled: "bool",
+  },
+  DX_FUNNEL_CHART_WIDGET: {
+    "!doc":
+      "An input text field is used to capture a users textual input such as their names, numbers, emails etc. Inputs are used in forms and can have custom validations.",
+    "!url": "https://docs.appsmith.com/widget-reference/input",
+    text: {
+      "!type": "string",
+      "!doc": "The text value of the input",
+      "!url": "https://docs.appsmith.com/widget-reference/input",
+    },
+    isValid: "bool",
+    isVisible: isVisible,
+    isDisabled: "bool",
+  },
 };
 
 export const GLOBAL_DEFS = {

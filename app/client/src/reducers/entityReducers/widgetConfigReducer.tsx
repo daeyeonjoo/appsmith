@@ -31,6 +31,8 @@ import { SkeletonWidgetProps } from "../../widgets/SkeletonWidget";
 import { SwitchWidgetProps } from "widgets/SwitchWidget";
 import { DxInputWidgetProps } from "../../widgets/DxInputWidget";
 import { DXButtonWidgetProps } from "../../widgets/DXButtonWidget";
+import { DxDoughnutChartWidgetProps } from "../../widgets/DxDoughnutChartWidget";
+import { DxFunnelChartWidgetProps } from "../../widgets/DxFunnelChartWidget";
 
 const initialState: WidgetConfigReducerState = WidgetConfigResponse;
 
@@ -84,6 +86,10 @@ export interface WidgetConfigReducerState {
     ICON_WIDGET: Partial<IconWidgetProps> & WidgetConfigProps;
     SKELETON_WIDGET: Partial<SkeletonWidgetProps> & WidgetConfigProps;
     DX_INPUT_WIDGET: Partial<DxInputWidgetProps> & WidgetConfigProps;
+    DX_DOUGHNUT_CHART_WIDGET: Partial<DxDoughnutChartWidgetProps> &
+      WidgetConfigProps;
+    DX_FUNNEL_CHART_WIDGET: Partial<DxFunnelChartWidgetProps> &
+      WidgetConfigProps;
   };
   configVersion: number;
 }
